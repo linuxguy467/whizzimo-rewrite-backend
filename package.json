@@ -1,0 +1,24 @@
+{
+  "name": "whizzimo-rewrite-backend",
+  "version": "1.0.0",
+  "description": "Backend scripts for rewrite of Whizzimo site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "node --inspect-brk index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linuxguy467/whizzimo-rewrite-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linuxguy467/whizzimo-rewrite-backend/issues"
+  },
+  "homepage": "https://github.com/linuxguy467/whizzimo-rewrite-backend#readme",
+  "dependencies": {
+    "mongoose": "^5.3.4"
+  }
+}
