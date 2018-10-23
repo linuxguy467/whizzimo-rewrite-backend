@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const globalInboxSchema = new mongoose.Schema({
-  _id: {
+  firebaseId: {
     type: String,
     required: true
   },
@@ -12,15 +12,9 @@ const globalInboxSchema = new mongoose.Schema({
     required: true
   },
   lessonPlans: Object,
-  name: {
-    type: String,
-    required: true
-  },
+  name: String,
   userSettings: Object,
-  workbooks: {
-    type: Object,
-    required: true
-  }
+  workbooks: Object
 });
 
 module.exports = {

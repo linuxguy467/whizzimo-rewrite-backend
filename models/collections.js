@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const wordListSchema = new mongoose.Schema({
-    _id: String,
+    firebaseId: String,
     desc: String,
     exactSoundsFilter: Number,
     exactWordsFilter: String,
@@ -12,21 +12,12 @@ const wordListSchema = new mongoose.Schema({
 });
 
 const workBookSchema = new mongoose.Schema({
-    _id: String,
+    firebaseId: String,
     desc: String,
     name: String,
     order: Number,
     phonetic: String,
-    preview10: [{
-        word: {
-            type: String,
-            required: true
-        },
-        wordId: {
-            type: Number,
-            required: true
-        }
-    }]
+    preview10: Array
 });
 
 module.exports = {

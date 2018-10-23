@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const lessonplanSchema = new mongoose.Schema({
-    _id: {
+    firebaseId: {
         type: String,
         required: true
     },
